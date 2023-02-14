@@ -1,0 +1,103 @@
+/* table th.small { font-size: 70%; font-weight: bold; padding: 10px 18px; } */
+table th.small { font-size: 70%; font-weight: bold; padding:0px; }
+table td.small { font-size: 70%; }
+
+table.dataTable th { font-size: 70%; }
+table.dataTable td { font-size: 70%; }
+
+:root{
+--site-background: #deecec;
+--site-url: blue; /* #004270; */
+--site-url-visited: navy;
+--site-text-active: crimson;
+--site-dark-background: skyblue; /* #37adfb; */
+--site-medium-background: lightskyblue; /* #82cbfc; */
+--site-light-background: rgb(203, 238, 250); /* #9bd6fd; */
+}
+ 
+a:link { color: var(--site-url); }
+a:visited { color: var(--site-url-visited); }           
+a:active { color: var(--site-text-active); }     
+a:hover {color: var(--site-text-active); text-decoration: none; }    
+a { text-decoration: none; }
+a.notice { color: var(--site-text-active); font-weight: bold; font-size: small; }
+a.notice:visited { color: var(--site-text-active); font-weight: normal; font-size: small; }
+b { font-weight: bold; }
+h1 { font-size: x-large; font-weight: bold; }
+h2 { font-size: large; font-weight: bold; }
+h3 { font-size: medium; font-weight: bold; }
+h4 { font-size: small; font-weight: bold; }
+p { font-size: small; font-family: Verdana, Arial, sans-serif; }
+p.blue { color: blue; }
+h1,h2,h3,h4,p.center,span.center { text-align: center; }
+table.outline { border: 2px solid var(--site-dark-background); border-collapse: separate; }
+table.center { margin-left: auto; margin-right: auto; }
+table.striped tr:nth-child(even) { background-color: var(--site-light-background); }
+table.striped tbody tr:hover { background-color: var(--site-dark-background); }
+table.striped-odd tr:nth-child(odd) { background-color: var(--site-light-background); }
+table.striped-odd tbody tr:hover { background-color: var(--site-dark-background); }
+tr.header { background-color: var(--site-dark-background); }
+tr.shade { background-color: var(--site-light-background); }
+th { font-size: small; font-weight: bold; font-family: Verdana, Arial, sans-serif; text-align: center; }
+th.shade { background-color: var(--site-dark-background); }
+td { font-size: small; font-family: Verdana, Arial, sans-serif; }
+tfoot.shade { background-color: var(--site-light-background); }
+/* th,td.small { font-size: x-small; } */
+td.center { text-align: center; }
+.hLeft { text-align: left; }
+.hRight { text-align: right; }
+.vTop { vertical-align: top; }
+.vMiddle { vertical-align: middle; }
+.vBottom { vertical-align: bottom; }
+ul { font-size: small; }
+ol { font-size: small; }
+blockquote { font-size: small; margin: 0px 50px 20px; }
+address { font-size: small; font-weight: italic; font-family: Verdana, Arial, sans-serif; }
+address.center { text-align: center; }
+pre { font-size: small; }
+.mediumSize { font-size: small; }
+.smallSize { font-size: x-small; }
+#left { float: left; }
+#right { float: right; }
+div.left  { float: left; }
+div.right { float: right; }
+div.center { float: center; }
+div.banner {
+background-image: url("/images/banner.jpg");
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+background-color: black;
+color: yellow; }
+div.youtube {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+iframe.youtube {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.noBG { background-color: var(--site-background); }
+.lightBG { background-color: var(--site-light-background); }
+.mediumBG { background-color: var(--site-medium-background); }
+.darkBG { background-color: var(--site-dark-background); }
+.NOmobile { display: inline-block; }
+table.smallBanner { display: none; }
+table.largeBanner { display: table; }
+@media (max-width: 767px) {
+.NOmobile { display: none; }
+table.smallBanner { display: table; }
+table.largeBanner { display: none; }
+}
+img.auto { max-width: 100%; height: auto; }
+img.center { display: block; margin-left: auto; margin-right: auto; }
+.age1 { background-color: #00ff00; }
+input.donate { width: 120px; }
+@media (max-width: 800px) {
+input.donate { width: 100px; }
+}
